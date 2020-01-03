@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
+:root {
+  --leading: 2em;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -8,6 +12,7 @@ body {
 
 .hero-bg {
   background: #307dd9 url(images/background.jpg);
+  background-position: 12% 83%;
   color: white;
   text-align: center;
   padding-bottom: 4em;
@@ -102,4 +107,41 @@ h1 span::before {
 
 .form-container input[type='button']:hover {
   background-color: #f1af51;
+}
+
+/* description section */
+
+.description {
+  margin: 0;
+}
+
+.right-col {
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.right-col h2 {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.right-col h2::before {
+  content: ' ';
+  position: absolute;
+  background: #00bfff;
+  width: 8.5em;
+  height: 0.4em;
+  bottom: 0;
+  margin-left: -0.5em;
+  z-index: -1;
+  border-radius: 1em 2em;
+}
+
+.right-col p {
+  line-height: var(--leading);
+}
+
+.description img {
+  width: 100%;
 }
