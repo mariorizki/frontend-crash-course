@@ -145,3 +145,67 @@ h1 span::before {
 .description img {
   width: 100%;
 }
+
+@media (min-width: 730px) {
+  section {
+    margin: 0 4em;
+  }
+
+  .form-container {
+    margin: 2em -4em 0;
+  }
+}
+
+@media (min-width: 930px) {
+  .hero-bg {
+    text-align: left;
+  }
+
+  .hero-bg section {
+    width: 65%;
+  }
+
+  .hero-bg p {
+    margin: 0 0 3em;
+  }
+
+  .form-container {
+    margin: 2em 0 0;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .form-container form {
+    display: flex;
+  }
+
+  .form-left {
+    width: 70%;
+  }
+
+  .form-container input[type='button'] {
+    width: 30%;
+    height: fit-content;
+    margin-top: 3.3em;
+    margin-left: 1em;
+    padding: 0.7em 0;
+    font-size: 1.1em;
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 'bowl content';
+  }
+
+  .description .right-col {
+    grid-area: content;
+    padding: 10% 10%;
+    text-align: left;
+  }
+
+  .description img {
+    grid-area: bowl;
+  }
+}
